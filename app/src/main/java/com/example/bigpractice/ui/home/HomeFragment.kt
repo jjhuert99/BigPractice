@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.bigpractice.R
+import com.example.bigpractice.databinding.FragmentHomeBinding
 
 /**
  * A simple [Fragment] subclass.
@@ -13,17 +14,15 @@ import com.example.bigpractice.R
  * create an instance of this fragment.
  */
 class HomeFragment : Fragment() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+    private lateinit var binding: FragmentHomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
+
+        return binding.root
     }
 
     companion object {
