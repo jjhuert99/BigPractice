@@ -8,11 +8,6 @@ import android.view.ViewGroup
 import com.example.bigpractice.R
 import com.example.bigpractice.databinding.FragmentHomeBinding
 
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
 
